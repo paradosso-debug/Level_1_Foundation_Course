@@ -1,0 +1,77 @@
+/* 
+  Tiny CSS (optional)
+  The goal is NOT to become a CSS project.
+  This is just to make your HTML structure easier to see.
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+header,
+footer {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+main {
+  margin: 16px 0;
+  display: grid;
+  gap: 16px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+}
+.small {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background: #f5f5f5;
+}
+label {
+  display: block;
+  margin: 10px 0 6px;
+}
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+button {
+  cursor: pointer;
+}
+.grid-2 {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 720px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}

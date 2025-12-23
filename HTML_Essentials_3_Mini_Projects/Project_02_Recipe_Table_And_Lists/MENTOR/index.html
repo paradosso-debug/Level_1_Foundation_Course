@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- STEP 1 — Add your basic meta tags -->
+    <!--
+          Inside <head>, add:
+          1) <meta charset="UTF-8">
+          2) <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          3) <title>...</title> (use a title that matches this project)
+          4) <meta name="description" content="..."> (short: 1–2 sentences)
+          5) <meta name="keywords" content="..."> (comma-separated keywords)
+          6) <meta name="author" content="...">
+        -->
+
+    <!-- STEP 2 — Link your CSS file (optional but recommended) -->
+    <!--
+          Add: <link rel="stylesheet" href="styles.css">
+          Even if the focus is HTML, a tiny bit of CSS helps you *see* your structure.
+        -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Planner — HTML Essentials</title>
+    <meta
+      name="description"
+      content="A meal planning page practicing HTML structure, headings, lists, tables, and a simple form."
+    />
+    <meta
+      name="keywords"
+      content="HTML, lists, tables, forms, meta tags, SEO, recipe planner"
+    />
+    <meta name="author" content="Mentee" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      🧠 PROJECT TITLE: Recipe Planner: Table + Lists
+
+      ✅ WHAT YOU ARE PRACTICING (HTML Essentials)
+      - HTML Structure (doctype, html, head, body)
+      - Meta Tags & SEO (charset, viewport, description, keywords, author)
+      - Headings + Paragraphs
+      - Divs + Spans (grouping + styling hooks)
+      - Lists (ul/ol)
+      - Tables (table, thead, tbody, tr, th, td)
+      - Forms + User Input (form, label, input, select, textarea, button)
+
+      🎯 PROJECT GOAL
+      Build a recipe/meal-planning page that practices semantic structure, meta tags, headings, lists, a detailed ingredients table, and a small form for adding a shopping note.
+
+      IMPORTANT RULES (for this MENTOR version)
+      1) The comments below are the SAME as the mentee version.
+      2) Under each step, you will see the finished code.
+    -->
+
+    <!-- STEP 3 — Create a semantic page layout -->
+    <!--
+      Create the main layout using semantic tags:
+      - <header> for the top section
+      - <main> for the main content
+      - <footer> for the bottom section
+      Tip: Wrap everything in a <div class="page"> if you want a single container.
+    -->
+    <div class="page">
+      <header>
+        <!-- STEP 4 — Header (title + intro paragraph) -->
+        <!--
+          Inside <header>, add:
+          - One <h1> with the page name (ex: "Recipe Planner")
+          - One <p> explaining what the page is for
+          - Add a <span> inside the paragraph to emphasize ONE word (ex: "simple")
+        -->
+        <h1>Recipe Planner</h1>
+        <p>
+          A <span class="small">simple</span> page to practice lists, tables,
+          and forms while planning meals.
+        </p>
+      </header>
+
+      <main>
+        <!-- STEP 5 — Main section A (Lists) -->
+        <!--
+          Inside <main>, create a <section class="card"> for "Today’s Plan"
+          - Add an <h2>
+          - Add a <ul> list for "Meals" (at least 3 items)
+          - Add an <ol> list for "Cooking Steps" (at least 4 steps)
+        -->
+        <section class="card">
+          <h2>Today’s Plan</h2>
+
+          <h3>Meals</h3>
+          <ul>
+            <li>Breakfast: Yogurt + fruit</li>
+            <li>Lunch: Chicken + rice + veggies</li>
+            <li>Dinner: Salmon + potatoes</li>
+          </ul>
+
+          <h3>Cooking Steps</h3>
+          <ol>
+            <li>Wash and prep ingredients.</li>
+            <li>Cook the main protein.</li>
+            <li>Prepare the carbs (rice/potatoes).</li>
+            <li>Plate, taste, and adjust seasoning.</li>
+          </ol>
+        </section>
+
+        <!-- STEP 6 — Main section B (Tables) -->
+        <!--
+          Create a second <section class="card"> called "Ingredients Table"
+          - Add a <table> with columns like: Ingredient / Amount / Notes
+          - Use <thead> and <tbody>
+          - Add at least 5 rows in the tbody
+        -->
+        <section class="card">
+          <h2>Ingredients Table</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chicken breast</td>
+                <td>2 pieces</td>
+                <td>Lean protein</td>
+              </tr>
+              <tr>
+                <td>Rice</td>
+                <td>1 cup</td>
+                <td>Cooked</td>
+              </tr>
+              <tr>
+                <td>Broccoli</td>
+                <td>1 head</td>
+                <td>Steam or roast</td>
+              </tr>
+              <tr>
+                <td>Olive oil</td>
+                <td>1 tbsp</td>
+                <td>Healthy fat</td>
+              </tr>
+              <tr>
+                <td>Greek yogurt</td>
+                <td>1 cup</td>
+                <td>Snack / breakfast</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- STEP 7 — Main section C (Form) -->
+        <!--
+          Create a third <section class="card"> called "Shopping Note"
+          - Add a <form>
+          - Include:
+            1) A text input for "Item"
+            2) A number input for "Quantity"
+            3) A select for "Category" (Produce, Dairy, Protein, Other)
+            4) A textarea for "Extra notes"
+            5) A submit button
+        -->
+        <section class="card">
+          <h2>Shopping Note</h2>
+
+          <form>
+            <label for="item">Item</label>
+            <input
+              id="item"
+              type="text"
+              name="item"
+              placeholder="Example: bananas"
+            />
+
+            <label for="qty">Quantity</label>
+            <input
+              id="qty"
+              type="number"
+              name="qty"
+              min="1"
+              placeholder="Example: 3"
+            />
+
+            <label for="category">Category</label>
+            <select id="category" name="category">
+              <option value="produce">Produce</option>
+              <option value="dairy">Dairy</option>
+              <option value="protein">Protein</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="notes">Extra notes</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Anything to remember?"
+            ></textarea>
+
+            <button type="submit">Save Note</button>
+          </form>
+        </section>
+      </main>
+
+      <!-- STEP 8 — Footer (tiny SEO reminder) -->
+      <!--
+        In <footer>, add a <p class="small"> reminding what meta description is used for.
+      -->
+      <footer>
+        <p class="small">
+          SEO reminder: the meta description is the short summary search engines
+          may show under your page title.
+        </p>
+      </footer>
+    </div>
+
+    <!-- STEP LAST — Validate your HTML -->
+    <!--
+      Quick self-check:
+      ✅ Do you have ONLY ONE <h1>?
+      ✅ Are your headings in order? (h1 → h2 → h3)
+      ✅ Does every <label> connect to an input using for="..." and id="..."?
+      ✅ Does your table have <thead> and <tbody>?
+      ✅ Did you use BOTH a list and a table somewhere?
+      ✅ Did you use a <span> to style a *small* piece of text inside a bigger element?
+    -->
+  </body>
+</html>
