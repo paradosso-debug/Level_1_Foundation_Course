@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>Display Lab</h1>
+    <p class="subtitle">Block vs Inline vs None</p>
+
+    <section class="demo">
+      <h2>Part A: Block vs Inline</h2>
+      <p>
+        This is normal text with an
+        <span class="pill pill--inline">inline pill</span>
+        and another
+        <span class="pill pill--inline">inline pill</span>
+        inside the same line.
+      </p>
+
+      <div class="pill pill--block">Block pill (should take full line)</div>
+      <div class="pill pill--block">Another block pill</div>
+    </section>
+
+    <section class="demo">
+      <h2>Part B: display: none</h2>
+      <p class="small">You will hide the “Promo Banner” using display:none.</p>
+      <div class="banner">🔥 Promo Banner: 50% off (hide me)</div>
+      <button class="btn">This button is here so you can see what moves up when the banner disappears</button>
+    </section>
+
+    <section class="grid">
+      <h2>Mini Gallery</h2>
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+    </section>
+  </main>
+</body>
+</html>

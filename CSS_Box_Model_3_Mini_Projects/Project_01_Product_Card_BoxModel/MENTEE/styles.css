@@ -1,0 +1,77 @@
+/*
+  🧠 PROJECT: Product Card Lab — Width/Height/Padding
+
+  ✅ TOPICS
+  - Box Model (content → padding → border → margin)
+  - width / height / padding
+  - border / margin
+  - box-sizing
+  - box-shadow
+
+  IMPORTANT 
+  - After each step: SAVE → REFRESH.
+
+  🎯 GOAL: Control size using width/height/padding and clearly identify content vs padding vs border vs margin.
+*/
+
+/* STEP 1 — Page + grid layout (so you can SEE spacing) */
+/*
+  Select body: set font-family and remove default margin.
+  Select .page: set max-width, center it with margin: 0 auto, and add padding.
+  Select .grid: use display: grid and gap to separate cards.
+  This step is NOT the lesson—it's just so the box model is visible.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 2 — Card size (width/height) */
+/*
+  Select .card and set a width (example: 320px).
+  Set a min-height (example: 220px) so height behavior is visible.
+  Add a background color so you can SEE the content box.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 3 — Padding (space INSIDE the card) */
+/*
+  Add padding to .card (example: 18px).
+  Explain to yourself: padding pushes content away from the edges.
+  Test: change padding to 36px and notice what changes.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 4 — Border (outline around padding) */
+/*
+  Add a border to .card (example: 2px solid #ddd).
+  Add border-radius so edges are rounded.
+  Test: make border 6px thick and see how the box changes.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 5 — Margin (space OUTSIDE the card) */
+/*
+  Add margin-top ONLY to #cardB (example: 18px).
+  Notice: margin moves the whole card away from neighbors.
+  Say it: padding = inside space, margin = outside space.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 6 — Box shadow (depth without affecting layout) */
+/*
+  Add box-shadow to .card (subtle).
+  Confirm: shadow does not push other elements away (not like margin).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/*
+  ✅ FINAL CHECKLIST
+  - Can you point to content/padding/border/margin on your boxes?
+  - Did you test changing padding and border thickness?
+  - Did you test box-sizing: border-box?
+  - Did you add box-shadow and confirm it doesn't change layout spacing?
+*/

@@ -1,0 +1,59 @@
+/*
+  🧠 PROJECT: Display Lab — block vs inline vs none
+
+  ✅ TOPICS PRACTICED
+  - display: block vs inline vs none
+  - position: static / relative / absolute / fixed / sticky
+  - top / right / bottom / left
+  - overflow: visible / hidden / scroll / auto
+
+  IMPORTANT 
+  - After each step: SAVE → REFRESH.
+
+  🎯 GOAL: Understand how display changes layout, and how display:none removes elements.
+*/
+
+/* STEP 1 — Basic page styling (visual helper) */
+/*
+  Style body: remove default margin and set a font-family.
+  Style .page: max-width, center with margin: 0 auto, add padding.
+  Add simple card-like styling for .demo sections so you can read clearly.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 2 — Show inline behavior (inline pills) */
+/*
+  Select .pill--inline and set display: inline (inline is default for span).
+  Add padding + border-radius + background so it looks like a pill.
+  Notice: inline elements do NOT start on a new line.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 3 — Show block behavior (block pills) */
+/*
+  Select .pill--block and set display: block.
+  Add the same pill styling so it matches the inline version.
+  Add margin-top so the block pills have breathing room.
+  Notice: block elements take the full line.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 4 — display:none removes from layout */
+/*
+  Select .banner and set display: none.
+  Observe: the button moves up because the banner is removed from layout.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 5 — Mini gallery boxes */
+/*
+  Select .grid and add margin-top.
+  Select .grid .card and style them (background, padding, border, radius).
+  This reinforces block layout and stacking.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */

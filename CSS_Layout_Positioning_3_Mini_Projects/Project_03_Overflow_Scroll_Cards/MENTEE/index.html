@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overflow Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>Overflow Lab</h1>
+    <p class="subtitle">What happens when content is bigger than the box?</p>
+
+    <section class="row">
+      <article class="box box--visible">
+        <h2>overflow: visible</h2>
+        <p class="small">Content can spill outside the box.</p>
+        <div class="long-content">
+          This is a long line of text that will not fit inside the box width and will try to overflow outside the box if allowed.
+        </div>
+      </article>
+
+      <article class="box box--hidden">
+        <h2>overflow: hidden</h2>
+        <p class="small">Extra content is clipped (cut off).</p>
+        <div class="long-content">
+          This is a long line of text that will not fit inside the box width and will be clipped if hidden.
+        </div>
+      </article>
+
+      <article class="box box--scroll">
+        <h2>overflow: scroll</h2>
+        <p class="small">Scrollbars always appear.</p>
+        <div class="tall-content">
+          <p>Line 1</p><p>Line 2</p><p>Line 3</p><p>Line 4</p><p>Line 5</p><p>Line 6</p><p>Line 7</p><p>Line 8</p>
+        </div>
+      </article>
+
+      <article class="box box--auto">
+        <h2>overflow: auto</h2>
+        <p class="small">Scrollbars appear only if needed.</p>
+        <div class="tall-content">
+          <p>Line 1</p><p>Line 2</p><p>Line 3</p><p>Line 4</p><p>Line 5</p><p>Line 6</p><p>Line 7</p><p>Line 8</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

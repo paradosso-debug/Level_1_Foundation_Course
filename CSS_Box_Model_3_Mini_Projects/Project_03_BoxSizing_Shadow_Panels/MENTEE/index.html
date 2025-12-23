@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panels Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>Panels Studio</h1>
+    <p class="subtitle">Compare content-box vs border-box, then add shadows.</p>
+
+    <section class="row">
+      <div class="panel panel--default">
+        <h2>Default (content-box)</h2>
+        <p>This panel uses the default box model.</p>
+        <p class="small">Padding + border add to size.</p>
+      </div>
+
+      <div class="panel panel--borderbox">
+        <h2>Border-Box</h2>
+        <p>This panel uses <code>box-sizing: border-box</code>.</p>
+        <p class="small">Padding + border stay inside the width.</p>
+      </div>
+
+      <div class="panel panel--shadow">
+        <h2>Shadow Panel</h2>
+        <p>This panel adds a shadow to show depth.</p>
+        <p class="small">Shadow does NOT change layout spacing.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

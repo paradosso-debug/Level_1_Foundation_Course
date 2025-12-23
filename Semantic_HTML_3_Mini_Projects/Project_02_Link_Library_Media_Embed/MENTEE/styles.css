@@ -1,0 +1,85 @@
+/*
+  Visual helper CSS (NOT a CSS lesson)
+
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+.page {
+  max-width: 1050px;
+  margin: auto;
+  padding: 24px;
+}
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  color: #000;
+  display: inline-block;
+}
+.small {
+  font-size: 0.92rem;
+  opacity: 0.8;
+}
+.card {
+  border: 1px dashed #bbb;
+  border-radius: 14px;
+  padding: 14px;
+  margin-top: 12px;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+figcaption {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-top: 8px;
+}
+audio,
+video {
+  width: 100%;
+  margin-top: 10px;
+}
+iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+code {
+  background: #f6f6f6;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
